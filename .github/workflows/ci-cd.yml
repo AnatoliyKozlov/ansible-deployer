@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3.0.0
-      secrets: |
-        GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: user/app:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}
