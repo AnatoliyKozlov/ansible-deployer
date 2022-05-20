@@ -13,4 +13,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: toliyansky/ansible-deployer:1.0.1 toliyansky/ansible-deployer:latest
+          tags: toliyansky/ansible-deployer:1.0.1,toliyansky/ansible-deployer:latest
