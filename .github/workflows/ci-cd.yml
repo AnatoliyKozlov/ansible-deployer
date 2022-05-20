@@ -1,0 +1,10 @@
+name: Build and Push Image
+on: [push]
+jobs:
+  Build-And-Push-Image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v3.0.0
+      secrets: |
+        GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}

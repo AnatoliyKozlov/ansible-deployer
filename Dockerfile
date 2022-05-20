@@ -1,6 +1,6 @@
-FROM ubuntu:19.10
+FROM ubuntu:22.10
 
-LABEL version="1.0" \
+LABEL version="1.0.1" \
       maintainer="toliyansky@gmail.com" \
       description="Image for deploying with ansible"
 
