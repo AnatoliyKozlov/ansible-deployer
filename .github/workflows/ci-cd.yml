@@ -8,6 +8,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: user/app:latest
+          tags: toliyansky/ansible-deployer:1.0.1
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.DOCKERHUB_TOKEN }}
