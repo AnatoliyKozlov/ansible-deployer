@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:22.10
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -7,6 +7,6 @@ LABEL version="1.0.1" \
       description="Image for deploying with ansible"
 
 RUN apt update && apt install -y ansible sshpass python3-pip
-RUN ansible-galaxy list
+RUN ansible-galaxy list --roles-path ~
 RUN ansible-galaxy collection install community.general
 RUN pip install docker
