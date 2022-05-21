@@ -1,5 +1,7 @@
 FROM ubuntu:22.10
 
+ENV DEBIAN_FRONTEND noninteractive
+
 LABEL version="1.0.1" \
       maintainer="toliyansky@gmail.com" \
       description="Image for deploying with ansible"
