@@ -5,3 +5,4 @@ LABEL version="1.0.1" \
       description="Image for deploying with ansible"
 
 RUN apt update && apt install -y ansible sshpass
+RUN pip install docker
